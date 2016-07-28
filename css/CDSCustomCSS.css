@@ -42,11 +42,11 @@
 
 .our-team-title{
   color: white;
-  padding-top: 50px; 
+  padding-top: 50px;
 }
 
 .darken {
-  background-image: 
+  background-image:
     linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
@@ -98,4 +98,48 @@
 
 .mobileIconDiv span {
   display: none;
+}
+#left{
+  position: relative;
+  width: 50%;
+  float: left;
+}
+th{
+  background-color: white;
+}
+td{
+  border: solid white 5px;
+}
+#right{
+  position: relative;
+  float: right;
+  margin-right: 500px;
+}
+.NOAA {
+  background-color: #ffc34d;
+  bottom: 20px;
+}
+.DOC {
+  background-color: #009933;
+  bottom: 20px;
+}
+.BEA {
+  background-color: #3366cc;
+  bottom: 20px;
+}
+.NIST {
+  background-color: #4dc3ff;
+  bottom: 20px;
+}
+.PTO {
+  background-color: #a6a6a6;
+  bottom: 20px;
+}
+.ITA {
+  background-color: #ffe6e6;
+  bottom: 20px;
+}
+.ESA {
+  background-color: #ffffcc;
+  bottom: 20px;
 }
