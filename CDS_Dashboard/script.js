@@ -1,4 +1,4 @@
-'use strict';
+/*'use strict';
 
 var chart;
 var chart2;
@@ -13,7 +13,7 @@ $(document).ready( function() {
  desktopMq.addListener(widthChange);
  desktopMq2.addListener(widthChange);
  var $container = $('.container');
- var secondChart = $('#secondContainer'); 
+ var secondChart = $('#secondContainer');
  var firstChart = $('#chartContainer');
  var $modalName = $('#modalName');
  var $modalInitiative = $('#modalInitiative');
@@ -44,8 +44,8 @@ function widthChange(mq, desktopMq, desktopMq2) {
         secondChart.css("height", "500px");
         secondChart.css('width', '350px');
         firstChart.css("height", "500px");
-        firstChart.css('width', '400px'); 
-    } 
+        firstChart.css('width', '400px');
+    }
     else {
         secondChart.css('width', '500px');
         firstChart.css('width', '500px');
@@ -204,7 +204,7 @@ var data = [{
                 picture: '../ImageCarousel/bureauLogos/doc-logo.png',
                 web: 'https://data.commerce.gov/'
             }, {
-                y: 1, 
+                y: 1,
                 name: 'DOC',
                 color: '#0057a9',
                 initiative: 'White House Council of Women and Girls',
@@ -245,7 +245,7 @@ function moveChart() {
     } else {
         firstChart.animate({'marginLeft' : "-=300px"}, 100);
         firstChart.css("display", "inline-block");
-    }   
+    }
 }
 
 function setSecondChart(options) {
@@ -266,8 +266,8 @@ function setSecondChart(options) {
     secondChart.css("visibility","visible");
 }
 
-//Used to create the modals rather than 
-function createModal(series) {              
+//Used to create the modals rather than
+function createModal(series) {
     $modalName.prepend('<p>' + "Bureau: " + series.name + '</p>');
     $modalInitiative.prepend('<p>' + "Initiative: " + series.initiative + '</p>');
     $modalServices.prepend('<p>' + "Services: " + series.services + '</p>');
@@ -363,11 +363,11 @@ Highcharts.setOptions({
                     events: {
                         click: function () {
                             // var drilldown = this.drilldown; // uses keyword 'this'
-                            // var options; 
+                            // var options;
                             mq.addListener(responsiveHighCharts);
                             responsiveHighCharts(mq, this.drilldown);
-                            
-                            
+
+
                             function responsiveHighCharts(mq, drilldown) {
                                 var options = buildOptions(drilldown);
                                 if (mq.matches) {
@@ -399,17 +399,17 @@ Highcharts.setOptions({
                     var point = this.point; // sets keyword 'this' -- this.point is really series.data
                     var s = point.name + ': ' + point.list + '. '; //formats pointer
                     if (point.deepDrill) {
-                        s = point.name + '<br/>' + 
+                        s = point.name + '<br/>' +
                             'Services: ' + point.services + '<br/>' +
                             'Objective: ' + point.objective + '<br/>' + '<br/>' +
                             '<em>' + 'Click to return home' + '</em>';
-                    } else if (point.objective == 'Numerous Objectives') { 
-                        s = point.name + '<br/>' + 
+                    } else if (point.objective == 'Numerous Objectives') {
+                        s = point.name + '<br/>' +
                             '<em>' + 'Click Here to Learn More About ' + point.name + ' Projects' + '</em>';
                     } else if (point.drilldown){
                         s = 'Click to view ' + point.name;
                     } else {
-                        s = point.name + '<br/>' + 
+                        s = point.name + '<br/>' +
                             'Initiative: ' + point.initiative + '<br/>' +
                             'Services: ' + point.services + '<br/>' +
                             'Objective: ' + point.objective + '<br/>' + '<br/>' +
@@ -418,7 +418,7 @@ Highcharts.setOptions({
                     return s;
                 }
             }, //end of tooltip
-            series: [{  // sets chart series here 
+            series: [{  // sets chart series here
             type: chartType,
             name: name,
             data: data,
@@ -453,28 +453,28 @@ Highcharts.setOptions({
                 var point = this.point; // sets keyword 'this' -- this.point is really series.data
                 var s = point.name + ': ' + point.list + '. '; //formats pointer
                 if (point.deepDrill) {
-                    s = point.name + '<br/>' + 
+                    s = point.name + '<br/>' +
                         'Services: ' + point.services + '<br/>' +
                         'Objective: ' + point.objective + '<br/>' + '<br/>' +
                         '<em>' + 'Click to return home' + '</em>';
-                } else if (point.objective == 'Numerous Objectives') { 
-                    s = point.name + '<br/>' + 
+                } else if (point.objective == 'Numerous Objectives') {
+                    s = point.name + '<br/>' +
                         '<em>' + 'Click Here to Learn More About ' + point.name + ' Projects' + '</em>';
                 } else if (point.drilldown){
                     s = 'Click to view ' + point.name;
                 } else {
-                    s = point.name + '<br/>' + 
+                    s = point.name + '<br/>' +
                         'Initiative: ' + point.initiative + '<br/>' +
                         'Services: ' + point.services + '<br/>' +
                         'Objective: ' + point.objective + '<br/>' + '<br/>' +
                         '<em>' + 'Click to Learn More' + '</em>';
                     }
-                
+
                 }
                 return s;
             }
         },
-        series: [{  // sets chart series here 
+        series: [{  // sets chart series here
             type: chartType,
             name: name,
             data: [{y:1}]
@@ -484,4 +484,4 @@ Highcharts.setOptions({
 chart = new Highcharts.Chart(chart1);
 chart2 = new Highcharts.Chart(chart2);
 
-}); // end of document.ready()
+}); // end of document.ready()*/
