@@ -16,7 +16,7 @@
 #chartContainer {
   padding-top: 50px;
   /*display: inline-block;*/
-  margin: 0 auto;
+  
 }
 
 .modal-content {
@@ -75,23 +75,23 @@ div.modal-content {
 }
 
 #modalPicture {
-  display: inline-block; 
+  display: inline-block;
   vertical-align: baseline;
   margin: 90px 21px 50px 15px;
 }
 
 div#bureauInfo {
-  position:relative; 
+  position:relative;
   display:inline-block;
   vertical-align: top;
   margin-top: 90px;
   margin-bottom: 70px;
 }
 
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 667px) 
-and (orientation : portrait) { 
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : portrait) {
 
     /* This is the CSS for the close modal */
     div.close-modal {
@@ -157,13 +157,13 @@ and (orientation : portrait) {
     }
 
     #modalPicture {
-      display: inline-block; 
+      display: inline-block;
       vertical-align: baseline;
       margin: 10px 35px;
     }
 
     div#bureauInfo {
-      position:relative; 
+      position:relative;
       display:inline-block;
       vertical-align: top;
       margin-top: 20px;
@@ -172,18 +172,18 @@ and (orientation : portrait) {
     }
 }
 
-@media only screen 
-and (max-device-width : 374px) 
+@media only screen
+and (max-device-width : 374px)
 and (orientation : portrait) {
-  
+
   div.close-modal {
     float: none;
     margin-bottom: 10px;
   }
 }
 
-@media only screen 
-and (max-device-width : 768px) 
+@media only screen
+and (max-device-width : 768px)
 and (orientation : portrait) {
   div.modal-content {
     padding-top: 5px;
